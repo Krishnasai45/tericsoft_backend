@@ -18,7 +18,7 @@ In the project directory, tried to create an application DataBase and Api call f
 
 `npm install`
 
-`node server..js`
+`node server.js`
 
 ## Libraries installed
 
