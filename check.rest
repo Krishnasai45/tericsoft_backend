@@ -1,0 +1,52 @@
+POST http://localhost:5000/account/register
+Content-Type: application/json
+
+{
+    "phone" : 9033117699,
+    "password" : "sagar123"
+}
+
+###
+
+POST http://localhost:5000/account/login
+Content-Type: application/json
+
+{
+    "phone" : 9133117699,
+    "password": "krishna"
+}
+
+
+###
+
+POST http://localhost:5000/movie
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDcxOTg3NDhiMjdhMTIzNDQxMWE3ZWYiLCJpYXQiOjE2MTgwNjM5MjF9.4fk9SVga5fh_5k9fo3eMk_ptuxqtM7M0g8x2bGJ3PL8
+
+{
+    "name" : "jathiratnalu",
+    "year": "2021",
+    "genre":"comedy"
+}
+
+###
+GET http://localhost:5000/movie
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDcxOTg3NDhiMjdhMTIzNDQxMWE3ZWYiLCJpYXQiOjE2MTgwNjM5MjF9.4fk9SVga5fh_5k9fo3eMk_ptuxqtM7M0g8x2bGJ3PL8
+
+###
+
+PUt http://localhost:5000/movie/6071b246dffe1a3a0cdfe3b3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDcxOTg3NDhiMjdhMTIzNDQxMWE3ZWYiLCJpYXQiOjE2MTgwNjM5MjF9.4fk9SVga5fh_5k9fo3eMk_ptuxqtM7M0g8x2bGJ3PL8
+
+{
+    "name" : "jathiratnalu",
+    "year": "2021",
+    "genre":"comedy"
+}
+
+###
+
+DELETE  http://localhost:5000/movie/6071b246dffe1a3a0cdfe3b3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDcxOTg3NDhiMjdhMTIzNDQxMWE3ZWYiLCJpYXQiOjE2MTgwNjM5MjF9.4fk9SVga5fh_5k9fo3eMk_ptuxqtM7M0g8x2bGJ3PL8
